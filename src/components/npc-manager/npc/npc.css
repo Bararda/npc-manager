@@ -1,0 +1,81 @@
+.npc {
+    display: grid;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "con dex str"
+        "int npc npc"
+        "wis npc npc"
+        "cha npc npc"
+}
+
+.npc-roll {
+    border: none;
+    border-left: 1px solid black;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.crit-fail {
+    color: #DC3545;
+    font-weight: bolder;
+}
+
+.crit-success {
+    color: #28A745;
+    font-weight: bolder;
+}
+
+.npc-name {
+    position: absolute;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border: none;
+    font-size: 11px;
+    width: calc(100% - 2px);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.npc-wrapper {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    grid-area: npc;
+    width: 100px;
+}
+
+.npc-str {
+    grid-area: str;
+}
+
+.npc-dex {
+    grid-area: dex;
+}
+
+.npc-con {
+    grid-area: con;
+}
+
+.npc-int {
+    grid-area: int;
+}
+
+.npc-wis {
+    grid-area: wis;
+}
+
+.npc-cha {
+    grid-area: cha;
+}
+.npc-roll-button {
+    margin-left: 48px;
+    margin-top: -67px;
+    width: 50px;
+}
